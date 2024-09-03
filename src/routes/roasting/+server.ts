@@ -56,10 +56,9 @@ export const POST: RequestHandler = async (event) => {
     const biodata = body.biodata;
     const language = body.language;
     try {
-       
-        let prompt = "berikan roasting singkat dengan kejam,menyindir, serta menyakitkan dalam bahasa gaul untuk profile linkedin berikut : " + infoIndo(biodata) + ". (hanya berikan response dengan singkat dalam bahasa indonesia. jangan berikan pujian atau saran.)";
+        let prompt = "Provide a constructive and thoughtful review for the following LinkedIn profile: " + infoIndo(biodata) + ". Please include positive aspects as well as one area for improvement.";
         if (language == "English") {
-            prompt = "give a short and harsh roasting for the following linkedin profile  " + infoInggris(biodata) + ". (only give short response with english language. dont give praise or advice.)";
+            let prompt = "Provide a constructive and thoughtful review for the following LinkedIn profile: " + infoIndo(biodata) + ". Please include positive aspects as well as one area for improvement.";
         }
         const apiKeys = OPEN_AI_API_KEY.split(",");
         const randomapiKey = apiKeys[Math.floor(Math.random() * apiKeys.length)];
