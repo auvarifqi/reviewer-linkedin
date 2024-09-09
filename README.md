@@ -31,4 +31,3 @@ To interact with LinkedIn, you need to fetch your LinkedIn `cookie` and `csrf` t
 ---
 
 You're now ready to use the LinkedIn Reviewer Chatbot!
-``` 
